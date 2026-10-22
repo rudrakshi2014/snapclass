@@ -1,0 +1,20 @@
+# Utilities
+numpy
+pandas
+
+# Face Recognition
+scikit-learn
+# dlib-bin
+dlib/dist/dlib-20.0.99-cp313-cp313-macosx_12_0_x86_64.whl
+
+git+https://github.com/ageitgey/face_recognition_models
+setuptools
+
+# Database
+supabase
+bcrypt
+
+segno # to build QR code image
+pillow # preprocessing of image 
+
+streamlit
