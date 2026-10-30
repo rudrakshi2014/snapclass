@@ -102,13 +102,9 @@ def teacher_tab_manage_subjects():
     else:
         st.info("NO SUBJECTS FOUND. CREATE ONE ABOVE!")
 
-
-
-
 def teacher_tab_attendance_records():
     st.header("Attendance Records")
 
-    
 def login_teacher(username: str, password: str) -> bool:
     if not username or not password:
         st.error("Please enter both username and password.")
