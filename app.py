@@ -2,6 +2,7 @@ import streamlit as st
 from src.screens.student import show_student_page
 from src.screens.teacher import show_teacher_page
 from src.screens.home import show_home_page
+from src.components.dialog_auto_enroll import auto_enroll_dialog
 
 def main():
 
@@ -15,5 +16,14 @@ def main():
             show_student_page()
         case None:
             show_home_page()
+
+    join_code = st.query_params.get("join-code")
+    if join_code:
+        if st.session_state.login_type != 'student':
+            st.session_state.login_type = 'student'
+            st.rerun()
+
+        if st.session_state.get('is_logged_in') and st.session_state.get('user_role') == 'student':
+            auto_enroll_dialog(join_code)
 
 main()
