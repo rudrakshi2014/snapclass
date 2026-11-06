@@ -91,11 +91,11 @@ def show_student_page():
         student_dashboard()
         return
 
-    c1, c2 = st.columns(2, vertical_alignment="center", gap="xlarge")
+    c1, c2 = st.columns([2,1], vertical_alignment="center")
     with c1:
         header_dashboard()
     with c2:
-        if st.button("Go back to Home", key="loginbackbtn", type="secondary", shortcut="control+backspace"):
+        if st.button("Go to Home", key="loginbackbtn", type="secondary", shortcut="control+backspace"):
             st.session_state['login_type'] = None
             st.rerun()
     st.header("Login using FaceID", text_alignment="center")

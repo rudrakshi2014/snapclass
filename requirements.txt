@@ -1,3 +1,5 @@
+streamlit
+
 # Utilities
 numpy<2
 pandas
@@ -21,9 +23,7 @@ supabase
 bcrypt
 
 segno # to build QR code image
-pillow # preprocessing of image 
-
-streamlit
+pillow # preprocessing of image
 
 # Voice Recognition
 librosa # edit/modify/load audio files

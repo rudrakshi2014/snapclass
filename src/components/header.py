@@ -7,7 +7,7 @@ def header_home():
     st.markdown(f"""
             <div style="display: flex; flex-direction: column; justify-content: center; align-items: center; margin-bottom: 30px; margin-top: 30px;">
                 <img src="{logo_url}" width="100" height="100" />
-                <h1 style="text-align: center; color: #E0E3FF;">SNAP<br/>CLASS</h1>
+                <h1 style="text-align: center; color: #E0E3FF;">ATTENDIFLY</h1>
             </div>
             
 
@@ -20,7 +20,7 @@ def header_dashboard():
     st.markdown(f"""
             <div style="display: flex; justify-content: center; align-items: center; gap: 10px;">
                 <img src="{logo_url}" style="height: 85px;" />
-                <h2 style="text-align: left; color: #5865F2;">SNAP<br/>CLASS</h2>
+                <h2 style="text-align: left; color: #5865F2;">ATTENDIFLY</h2>
             </div>
             
 

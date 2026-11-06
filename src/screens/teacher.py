@@ -256,12 +256,12 @@ def login_teacher(username: str, password: str) -> bool:
     return False
     
 def teacher_screen_login():
-    c1, c2 = st.columns(2, vertical_alignment="center", gap="xlarge")
+    c1, c2 = st.columns([2,1], vertical_alignment="center")
     with c1:
         header_dashboard()
 
     with c2:
-        if st.button("Go back to Home", key="loginbackbtn", type="secondary", shortcut="control+backspace"):
+        if st.button("Go to Home", key="loginbackbtn", type="secondary", shortcut="control+backspace"):
             st.session_state['login_type'] = None
             st.rerun()
 
@@ -309,12 +309,12 @@ def register_teacher(username: str, name: str, password: str, confirm_password: 
         return False, f"Error creating teacher: {str(e)}"
 
 def teacher_register():
-    c1, c2 = st.columns(2, vertical_alignment="center", gap="xlarge")
+    c1, c2 = st.columns([2,1], vertical_alignment="center")
     with c1:
         header_dashboard()
 
     with c2:
-        if st.button("Go back to Home", key="loginbackbtn", type="secondary", shortcut="ctrl+backspace"):
+        if st.button("Go to Home", key="loginbackbtn", type="secondary", shortcut="ctrl+backspace"):
             st.session_state['login_type'] = None
             st.rerun()
 
