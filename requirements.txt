@@ -1,30 +1,27 @@
 streamlit
 
-# Utilities
-numpy<2
+# Core Utilities
+numpy<2.0.0
 pandas
 
-# Face Recognition
+# Build & Compatibility
+setuptools<70.0.0
+wheel
+
+# Machine Learning & Computer Vision
 scikit-learn
-
-# git clone https://github.com/davisking/dlib.git
-# cd dlib
-# pip install .
-
 dlib
-# dlib-bin
-# dlib/dist/dlib-20.0.99-cp313-cp313-macosx_12_0_x86_64.whl
+git+https://github.com/ageitgey/face_recognition_models#egg=face_recognition_models
+face-recognition
 
-git+https://github.com/ageitgey/face_recognition_models
-setuptools
+# Image & QR Processing
+Pillow
+segno
 
-# Database
+# Database & Auth
 supabase
 bcrypt
 
-segno # to build QR code image
-pillow # preprocessing of image
-
-# Voice Recognition
-librosa # edit/modify/load audio files
-resemblyzer # get embeddings of the audio files and compare if the voice matches
+# Voice Recognition & Audio
+librosa
+resemblyzer
