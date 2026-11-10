@@ -4,6 +4,15 @@ from src.screens.teacher import show_teacher_page
 from src.screens.home import show_home_page
 from src.components.dialog_auto_enroll import auto_enroll_dialog
 
+from flask import Flask
+
+# Vercel looks specifically for "app" or "application"
+app = Flask(__name__)
+
+@app.route("/")
+def home():
+    return "Hello from Vercel!"
+
 def main():
     st.set_page_config(
         page_title="Attendifly - Making Attendance smarter and faster using AI",

@@ -1,10 +1,12 @@
+import os
+
 import streamlit as st
 import segno
 import io
 
 @st.dialog("Share Class Link")
 def share_subject_dialog(subject_name, subject_code):
-    app_domain = "attendifly.streamlit.app"  # Replace with your actual app domain
+    app_domain = os.environ.get("APP_BASE_URL", "https://attendifly.streamlit.app").rstrip("/")
     join_url = f"{app_domain}/?join-code={subject_code}"
 
     st.header("Scan to Join")
