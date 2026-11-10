@@ -25,5 +25,3 @@ bcrypt
 # Voice Recognition & Audio
 librosa
 resemblyzer
-
-flask
